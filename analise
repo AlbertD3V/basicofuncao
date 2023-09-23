@@ -1,0 +1,36 @@
+# calculadora principal
+
+#neste arquivo eu guardei as funcoes
+
+def soma(val1, val2):
+    return val1 + val2
+
+def subtracao(val1, val2):
+    return val1 - val2
+
+def multiplicar(val1, val2):
+    return val1 * val2
+
+def divisao(val1, val2):
+    return val1 / val2
+
+
+============================================
+
+from calc import *
+
+#neste arquivo eu criei o menu e executo o programa
+
+print('#' * 20)
+print('Digite 1 para soma')
+print('Digite 2 para subtrair')
+print('Digite 3 para multiplcar')
+print('Digite 4 para dividir')
+print('#' * 20)
+
+menu = input('Qual a operação que voce deseja realizar:')
+
+if menu == '1':
+    a = int(input('Informe o primeiro número: '))
+    b = int(input('Informe o segundo número: '))
+    print('A resposta para a sua opreção é:')
